@@ -1,6 +1,17 @@
 <nav class="navbar navbar-expand navbar-dark blue-gradient">
-
-  <a class="navbar-brand" href="/"><i class="far fa-sticky-note mr-1"></i>memo</a>
+  <a class="navbar-brand" href="/" style="vertical-align: middle;">
+    <div style="align: left;margin-top:-12px">
+    <a href="/" class="navbar-brand" style="vertical-align: middle;">
+      <div style="height: 100%;vertical-align: middle;margin: 0px auto;">
+        <div>
+          <span class="tool-icon logo"></span>
+        </div>
+        <div style="margin-top: -42px;margin-bottom: -18px;text-align: center;">
+          <span style="font-size: 22px;">World War BattleShip</span>
+        </div>
+      </div>
+    </a>
+</div>
 
   <ul class="navbar-nav ml-auto">
 
@@ -31,7 +42,7 @@
       </a>
       <div class="dropdown-menu dropdown-menu-right dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
         <button class="dropdown-item" type="button"
-           onclick="location.href='{{ route("users.show", ["name" => Auth::user()->name]) }}'">      
+           onclick="location.href='{{ route("users.show", ["name" => Auth::user()->name]) }}'">
           マイページ
         </button>
         <div class="dropdown-divider"></div>
