@@ -69,6 +69,9 @@
         {{ $article->title }}
       </a>
     </h3>
+    @if(!empty($article->image_path))
+      <img src="https://d2rkvu7ciml56t.cloudfront.net/{{ $article->image_path }}" class="rounded img-fluid"  alt="投稿画像" title="投稿画像">
+    @endif
     <div class="card-text">
       {!! nl2br(e( $article->body )) !!}
     </div>
