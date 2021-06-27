@@ -7,7 +7,7 @@
           <span class="tool-icon logo"></span>
         </div>
         <div style="margin-top: -42px;margin-bottom: -18px;text-align: center;">
-          <span style="font-size: 22px;">Kaya's Choice</span> {{--World War BattleShip--}}
+          <span style="font-size: 22px;">World War BattleShip</span>
         </div>
       </div>
     </a>
@@ -21,7 +21,7 @@
     </li
     @endguest
 
-     @guest 
+     @guest
     <li class="nav-item">
        <a class="nav-link" href="{{ route('login') }}">ログイン</a>
     </li>
