@@ -38,9 +38,11 @@ class ArticleController extends Controller
   public function store(ArticleRequest $request, Article $article)
   {
     $image = $request->file('image');
-    $path = Storage::disk('s3')->putFile('wwbs', $image, 'public');
+    if(!empty($image)){
+      $path = Storage::disk('s3')->putFile('wwbs', $image, 'public');
+      $article->image_path = $path;
+    }
     $article->fill($request->all());
-    $article->image_path = $path;
     $article->user_id = $request->user()->id;
     $article->save();
 
