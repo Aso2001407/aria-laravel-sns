@@ -1,4 +1,9 @@
 /node_modules
+<<<<<<< HEAD
+=======
+/public/css
+/public/hot
+>>>>>>> dffc0742ef7c35e3f6165170c8cd0821975d13e1
 /public/js
 /public/mix-manifest.json
 /public/storage
@@ -11,4 +16,8 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+<<<<<<< HEAD
 .DS_Store
+=======
+.idea
+>>>>>>> dffc0742ef7c35e3f6165170c8cd0821975d13e1
